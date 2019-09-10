@@ -163,6 +163,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RIPARTI(View view) {
+        coordinate_old.setText("Old Latitude: "+latitude_old + "\n" + "Old Longitude: "+longitude_old);
         distanza = 0;
     }
 }
