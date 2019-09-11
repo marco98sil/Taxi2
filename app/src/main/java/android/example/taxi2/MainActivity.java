@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     double latitude_old;
     double longitude_old;
     Button STOP ;
+    Button RESTART;
 
 
     @RequiresApi(api = Build.VERSION_CODES.M)
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         coordinate = (TextView) findViewById(R.id.id_textview);
         coordinate_old = (TextView) findViewById(R.id.id_textview_old);
         STOP = (Button) findViewById(R.id.button_STOP);
+        RESTART = (Button) findViewById(R.id.button_RESTART);
         mContext = this;
         locationManager = (LocationManager) mContext.getSystemService(Context.LOCATION_SERVICE);
         if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
